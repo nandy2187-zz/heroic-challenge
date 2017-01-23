@@ -5,7 +5,7 @@
     .controller("leaderboardCtrl", function($scope, resultsDataFactory, $timeout, $interval){
 
       $scope.currentPage = 0;
-      $scope.waitTime = 6000;
+      $scope.waitTime = 8000;
       $scope.elementsInGrid = 15;
 
 
