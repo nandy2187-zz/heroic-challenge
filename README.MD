@@ -25,7 +25,7 @@ did you cut that down to and why?
 
 • What user experience considerations did you make with your solution / tradeoffs?
 
-  - Like  I said in the other response, I took my experience as an athlete so that's why I did a clean design, white, simple clear, not distractions
+  - Like  I said in the other answer, I took my experience as an athlete so that's why I did a clean design, white, simple clear, not distractions
   - I'm using the first letter of the name plus last name, and the nickname to be easy to recognize from down (taking in count this TV is in a height place)
 
 • What third party / open source libs did you use and why?
