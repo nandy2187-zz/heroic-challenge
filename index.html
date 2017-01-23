@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css" media="all" type=text/css>
+    <link rel="stylesheet" href="css/main.css" media="all" type=text/css>
+  </head>
+  <body ng-app="leaderboard" ng-controller="leaderboardCtrl">
+    <div class="leaderboard-container">
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <p>
+            <strong>leaderboard</strong>
+          </p>
+        </div>
+      </md-toolbar>
+      <md-content class="main-container" layout-padding layout-wrap>
+        <section>
+          <md-card class="border-card-green">
+            <md-card-header class="card-header half-container">
+              <md-card-header-text ng-cloak class="ng-cloak">
+                <span class="md-headline">{{listResults.workoutTitle}}</span>
+                <span class="md-headline">{{listResults.timestamp | date: 'dd-MM-yyyy'}}</span>
+                <div layout="row">
+                  <section flex="55" class="general-tests">
+                    <div class="sub-box" ng-repeat="test in listResults.tests">
+                      <div class="md-subhead block-content">{{test.title}}</div>
+                      <div class="md-subhead block-content">{{test.testInstructions}}</div>
+                      <div class="md-subhead block-content">Unit: {{test.unit}}</div>
+                    </div>
+                  </section>
+                  <section flex="55" class="right-align">
+                    <span class="md-subhead">You are watching the page:</span>
+                    <span class="big-number">#{{currentPage+1}}</span>
+                  </section>
+                </div>
+
+              </md-card-header-text>
+            </md-card-header>
+
+          </md-card>
+        </section>
+        <section class="grid-cards" ng-cloak>
+          <md-grid-list class="grid-result not-visible" ng-repeat="grid in gridPages"  md-cols=1 md-cols-sm="3" md-cols-md="4" md-cols-gt-md="5" md-row-height-sm="4em" md-row-height="4em" md-gutter="10px">
+            <md-grid-tile ng-repeat="result in grid | orderBy:result.rank" md-rowspan="4" >
+              <md-card layout-fill layout-padding class="border-card">
+                <md-card-header class="card-header">
+                  <md-card-avatar>
+                    <img class="md-user-avatar" ng-src="{{result.profileImg}}" alt="">
+                  </md-card-avatar>
+                  <md-card-header-text>
+                    <span class="md-headline">{{result.userFirstInitial}}.{{result.userLastName}}</span>
+                    <span class="md-subhead subtitle-username">{{result.username}}</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider class="divider-header"></md-divider>
+                <md-card-content>
+                  <div class="wood-info">
+                    <div class="control-group">
+                        <span class="bold-span">Rank:</span>
+                        <span class="light-span">{{result.rank}}</span>
+                    </div>
+                    <div class="control-group">
+                        <span class="bold-span">Date:</span>
+                          <ul class="not-list-style">
+                            <li ng-repeat="date in result.userTests">
+                              <div class="control-group">
+                                <span class="light-span">{{date.timestamp | date: 'dd-MM-yyyy'}}</span>
+                              </div>
+                            </li>
+                          </ul>
+                        <span class="bold-span">Test Result:</span>
+                        <ul>
+                          <li ng-repeat="test in result.tests">
+                            <span class="light-span">{{test}}</span>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </md-card-content>
+                <md-card-footer>
+                  <div class="md-subhead block-content small-font">{{result.userId}}</div>
+                </md-card-footer>
+              </md-card>
+            </md-grid-tile>
+          </md-grid-list>
+        </section>
+      </md-content>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="public/app.js"></script>
+    <script src="public/results-data-factory/results-data-factory.js"></script>
+    <script src="public/leaderboard-controller/leaderboard-controller.js"></script>
+  </body>
+</html>

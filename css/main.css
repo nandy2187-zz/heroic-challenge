@@ -1,0 +1,48 @@
+.leaderboard-container [ng\:cloak], .leaderboard-container [ng-cloak], .leaderboard-container [data-ng-cloak], .leaderboard-container [x-ng-cloak], .leaderboard-container .ng-cloak, .leaderboard-container .x-ng-cloak {
+  display: none !important; }
+.leaderboard-container .right-align {
+  text-align: right; }
+  .leaderboard-container .right-align .big-number {
+    font-size: 20px;
+    color: #0a96c8; }
+.leaderboard-container .small-font {
+  font-size: 6px; }
+.leaderboard-container .visible {
+  transition: all linear 0.5s;
+  opacity: 1; }
+.leaderboard-container .control-group {
+  margin-top: 4px;
+  margin-bottom: 4px; }
+  .leaderboard-container .control-group span {
+    display: inline-block; }
+  .leaderboard-container .control-group ul {
+    list-style: none;
+    margin: 0; }
+  .leaderboard-container .control-group .bold-span {
+    font-weight: bold; }
+  .leaderboard-container .control-group .light-span {
+    font-weight: normal; }
+.leaderboard-container .md-button .mdi-plus-circle {
+  display: inline-table; }
+.leaderboard-container .main-container.layout-padding {
+  padding: 20px !important; }
+.leaderboard-container .main-container .border-card-green {
+  border-top: 3px solid #24ac12; }
+.leaderboard-container .grid-cards .not-visible {
+  transition: all linear 0.5s;
+  display: none; }
+.leaderboard-container .grid-cards .grid-result {
+  margin-bottom: 10px; }
+.leaderboard-container .grid-cards .border-card {
+  border-top: 3px solid #0a96c8; }
+.leaderboard-container .grid-cards .divider-header {
+  margin-bottom: 3px; }
+.leaderboard-container .grid-cards .card-header {
+  padding-bottom: 20px;
+  background: #f1f2f2; }
+  .leaderboard-container .grid-cards .card-header .block-content {
+    display: inline-block; }
+  .leaderboard-container .grid-cards .card-header .subtitle-username {
+    color: #0a96c8; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+{
+  "name": "leaderboard",
+  "version": "0.0.0",
+  "authors": [
+    "maria.rosales <maria.rosales@rivetlogic.com>"
+  ],
+  "description": "challenge gorilla",
+  "main": "main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mdi": "master",
+    "angular-material": "master",
+    "angular": "~1.6.1",
+    "angular-slide-wrapper": "^0.1.8"
+  }
+}

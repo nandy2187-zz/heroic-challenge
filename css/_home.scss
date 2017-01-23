@@ -1,0 +1,92 @@
+.leaderboard-container {
+
+  [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+  }
+
+  .right-align {
+    text-align: right;
+
+    .big-number {
+      font-size: 20px;
+      color:#0a96c8;
+    }
+  }
+
+  .small-font {
+    font-size: 6px;
+  }
+
+  .visible {
+    transition: all linear 0.5s;
+    opacity: 1;
+  }
+
+  .control-group {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    span {
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+
+    .bold-span {
+      font-weight: bold;
+    }
+    .light-span {
+      font-weight: normal;;
+    }
+  }
+  .md-button {
+    .mdi-plus-circle {
+      display: inline-table;
+    }
+  }
+
+    .main-container {
+      &.layout-padding {
+        padding: 20px !important;
+      }
+
+      .border-card-green {
+        border-top: 3px solid #24ac12;
+      }
+
+    }
+
+    .grid-cards {
+
+      .not-visible {
+        transition: all linear 0.5s;
+        display: none;
+      }
+      .grid-result {
+        margin-bottom: 10px;
+      }
+
+      .border-card {
+        border-top: 3px solid #0a96c8;
+      }
+      .divider-header {
+        margin-bottom: 3px;
+      }
+
+      .card-header {
+        padding-bottom: 20px;
+        background: #f1f2f2;
+
+        .block-content {
+          display: inline-block;
+        }
+
+        .subtitle-username {
+          color:#0a96c8;
+        }
+      }
+    }
+
+}
