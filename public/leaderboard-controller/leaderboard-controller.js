@@ -19,10 +19,6 @@
         });
       });
 
-      $scope.$watch('listResults', function () {
-        $scope.gridPages = splitResults($scope.listResults.results, $scope.elementsInGrid);
-        pagination();
-      });
 
 
       $scope.checkURL = function(str) {
