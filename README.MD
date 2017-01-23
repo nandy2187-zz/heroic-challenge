@@ -24,6 +24,7 @@ did you cut that down to and why?
   - The pages are being changed by a $interval simple, not plugings just angular and js
 
 • What user experience considerations did you make with your solution / tradeoffs?
+  - The design is responsive so it will be adapted to the device
 
   - Like  I said in the other answer, I took my experience as an athlete so that's why I did a clean design, white, simple clear, not distractions
   - I'm using the first letter of the name plus last name, and the nickname to be easy to recognize from down (taking in count this TV is in a height place)
